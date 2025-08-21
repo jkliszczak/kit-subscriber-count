@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Lock CORS to your Ghost(Pro) domain
-  res.setHeader('Access-Control-Allow-Origin', 'https://YOUR-GHOST-DOMAIN'); // e.g., https://yourblog.ghost.io or your custom domain
+  res.setHeader('Access-Control-Allow-Origin', 'https://www.jeffsu.org'); // e.g., https://yourblog.ghost.io or your custom domain
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(200).end();
 
